@@ -1,13 +1,16 @@
-$(document).ready(function () {
-    $.ajax( {
-        url: "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=jsonfm",
-        data: queryData,
-        dataType: 'jsonfm',
-        type: 'POST',
-        headers: { 'Api-User-Agent': 'Example/1.0' },
-        success: function(data) {
-           $("#card1").html(data);
-           console.log(data);
-        }
-    } );
-});
+$(document).ready(function(){
+    $('#searchBtn').click(function() {
+        $.ajax({
+            url: 'http://en.wikipedia.org/w/api.php',
+            data: { action: 'query', list: 'search', srsearch: $("input[name=Wikipedia]").val(), format: 'json' },
+            dataType: 'jsonp',
+            success: processResult
+        });
+    });
+}); 
+
+function processResult(apiResult){
+ for (var i = 0; i < apiResult.query.search.length; i++){
+      $('#display-result').append('<p>'+apiResult.query.search[i].title+'</p>');
+ }
+}
