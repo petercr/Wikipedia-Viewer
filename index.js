@@ -6,11 +6,14 @@ $(document).ready(function(){
             dataType: 'jsonp',
             success: processResult
         });
+
     });
-}); 
+});
 
 function processResult(apiResult){
+  console.log(apiResult);
  for (var i = 0; i < apiResult.query.search.length; i++){
-      $('#display-result').append('<p>'+apiResult.query.search[i].title+'</p>');
+      $('#display-result').append('<h3>'+apiResult.query.search[i].title+'</h3>');
+      $('#display-result').append('<p>'+apiResult.query.search[i].snippet+'</p>');
  }
 }
