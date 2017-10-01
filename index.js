@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#searchBtn').click(function() {
         $.ajax({
             url: 'http://en.wikipedia.org/w/api.php',
-            data: { action: 'query', list: 'search', srsearch: $("input[name=Wikipedia]").val(), format: 'json' },
+            data: { action: 'query', list: 'search', srsearch: $("#Wikipedia").val(), format: 'json' },
             dataType: 'jsonp',
             success: processResult
         });
