@@ -1,8 +1,16 @@
 .showcase {
-    background: blue;
+    background: #FFF;
     height: 100vh;
 }
 
 i {
     margin: 25px;
+}
+
+#display-result h3 {
+  background-color: #F4F4F4;
+}
+
+#display-result p {
+
 }
