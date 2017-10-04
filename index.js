@@ -8,6 +8,12 @@ $(document).ready(function(){
         });
 
     });
+    $("#Wikipedia").keypress('keypress', function (e) {
+        var key = e.which || e.keyCode;
+        if (key === 13) { // 13 is enter
+          $("#searchBtn").click();
+        }
+    });
 });
 
 function processResult(apiResult){
