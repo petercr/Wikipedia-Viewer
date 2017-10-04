@@ -17,3 +17,5 @@ function processResult(apiResult){
       $('#display-result').append('<p>'+apiResult.query.search[i].snippet+'</p>');
  }
 }
+
+
