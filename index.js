@@ -21,13 +21,13 @@ function processResult(apiResult){
  for (var i = 0; i < apiResult.query.search.length; i++){
     //   $('#display-result').append('<h3>'+apiResult.query.search[i].title+'</h3>');
     //   $('#display-result').append('<p>'+apiResult.query.search[i].snippet+'</p>');
-    $('#display-result').append( '<div class="card mb-3" style="width: 80%;"> \
-      <div class="card-body"> \
-        <h4 class="card-title"> Some Text </h4> \
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cardcontent.</p> \
-        <a href="#" class="btn btn-primary">Go somewhere</a> \
-      </div> \
-    </div>');
+    $('#display-result').append( `<div class="card mb-3" style="width: 80%;"> 
+      <div class="card-body"> 
+        <h4 class="card-title"> ${apiResult.query.search[i].title} </h4> 
+        <p class="card-text">${apiResult.query.search[i].snippet}</p> 
+        <a href="#" class="btn btn-primary">Go to the page</a> 
+      </div> 
+    </div>`);
  }
 
 }
