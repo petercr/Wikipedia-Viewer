@@ -1,12 +1,11 @@
+h1 {
+    padding-top: 20px;
+}
+
 .showcase {
     background: #FFF;
     height: 100vh;
 }
-
-i {
-    margin: 25px;
-}
-
 
 #display-result h3 {
   background-color: #F4F4F4;
