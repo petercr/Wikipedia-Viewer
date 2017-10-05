@@ -25,11 +25,11 @@ function processResult(apiResult){
   }
   firstTime = false;
  for (var i = 0; i < apiResult.query.search.length; i++){
-    $('#display-result').append( `<div class="card mb-3" style="width: 80%;"> 
-      <div class="card-body"> 
-        <h4 class="card-title"> ${apiResult.query.search[i].title} </h4> 
+    $('#display-result').append( `<div class="card mb-3 " style="width: 80%;"> 
+      <div class="card-body pl-3"> 
+        <h4 class="card-title mt-2"><u> ${apiResult.query.search[i].title} </u></h4> 
         <p class="card-text">${apiResult.query.search[i].snippet}</p> 
-        <a href="https://en.wikipedia.org/?curid=${apiResult.query.search[i].pageid}" class="btn btn-primary" target="_blank">Go to the page</a> 
+        <a href="https://en.wikipedia.org/?curid=${apiResult.query.search[i].pageid}" class="btn btn-primary mb-3" target="_blank">Go to the page</a> 
       </div> 
     </div>`);
  }
