@@ -29,7 +29,7 @@ function processResult(apiResult){
       <div class="card-body "> 
         <h4 class="card-title"><u> ${apiResult.query.search[i].title} </u></h4> 
         <p class="card-text pl-2">${apiResult.query.search[i].snippet}</p> 
-        <a href="https://en.wikipedia.org/?curid=${apiResult.query.search[i].pageid}" class="btn btn-primary mb-3" target="_blank">Go to the page</a> 
+        <a href="https://en.wikipedia.org/?curid=${apiResult.query.search[i].pageid}" class="btn btn-warning mb-3" target="_blank">Go to the page</a> 
       </div> 
     </div>`);
  }
