@@ -16,6 +16,12 @@ $(document).ready(function(){
           $("#searchBtn").click();
         }
     });
+    $('#twitter').on("click", function() {
+      window.open("https://www.twitter.com/PeteCapeCod");
+    });
+    $('#gitHub').on("click", function() {
+      window.open("https://www.github.com/PeterCr");
+    });
 });
 
 function processResult(apiResult){
