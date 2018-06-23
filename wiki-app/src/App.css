@@ -8,3 +8,11 @@
   justify-content: center;
 
 }
+
+/* Styling by class */
+.top-section {
+  background: #f4f4f4;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
