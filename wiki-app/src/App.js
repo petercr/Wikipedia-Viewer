@@ -10,6 +10,10 @@ class App extends Component {
           <p id="text">Some cool quote...</p>
           <p id="author">The one who thought it up..?!</p>
         </div>
+        <div className="bottom-section">
+        <button id="new-quote">New Quote</button>
+        <button id="tweet-quote">Tweet this quote!!</button>
+        </div>
       </div>
     );
   }
