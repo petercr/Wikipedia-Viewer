@@ -1,3 +1,5 @@
+![256px_horizontal-01](https://user-images.githubusercontent.com/36637989/44373101-58d7cc80-a4df-11e8-9ce7-200deea956ad.png)
+
 # Wikipedia-Viewer
 This project allows you to search Wikipedia by inputting text and showing you the results of the search. It is one of the [FreeCodeCamp](https://www.freecodecamp.org) intermediate Front-End Challenges.
 
