@@ -53,6 +53,15 @@ h4 {
   background-color: #F4F4F4;
 }
 
+#social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 5%;
+    
+}
+
 #twitter:hover {
     cursor: pointer;
 }
@@ -67,6 +76,13 @@ h4 {
 
 #twitter {
     padding-left: 20%;
+}
+
+/* Media Queries for large screens */
+@media (min-width: 1000px) {
+    #social-icons {
+        justify-content: space-between;
+    }
 }
 
 
