@@ -14,3 +14,7 @@ Thanks I hope you enjoy my creation. And feel free to reach out to me on Twitter
 
 Or here on **GitHub** at [PeterCr](https://www.github.com/petercr)
 
+**Contributors: [Dee-y](https://www.github.com/dee-y)**
+
+The awesome logos :sunglasses: :+1:
+

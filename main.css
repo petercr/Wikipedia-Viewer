@@ -1,4 +1,8 @@
+/* Global element styling */
+
 body {
+    height: 100vh;
+    width: 100vw;
     background: #108dc7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -20,6 +24,8 @@ h4 {
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+
+/* Styling by class */
 
 .showcase {
     /* background: #FFF; */
@@ -49,6 +55,20 @@ h4 {
     font-size: 20px;
 }
 
+.input-group-addon {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.logo {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Styling by ID */
+
 #display-result h3 {
   background-color: #F4F4F4;
 }
@@ -61,6 +81,21 @@ h4 {
     margin-top: 5%;
     
 }
+
+#header-image {
+    margin-left: 10%;
+    width: 75%;
+}
+
+#logo-credit {
+    text-shadow: 1px 1px 3px white;
+}
+
+#Wikipedia {
+    font-size: 20px;
+}
+
+/* Styling for social media icons */
 
 #twitter:hover {
     cursor: pointer;
