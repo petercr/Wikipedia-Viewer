@@ -1,61 +1,55 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wikipedia Viewer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="main.css">
-      <link href="https://fonts.googleapis.com/css?family=Nosifer|Manuale" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nosifer|Manuale" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container-fluid showcase">
-      <div class="container">
+  <div class="container-fluid showcase">
+    <div class="container">
       <div class="row">
-            <div class="col-12 justify-content-center">
-                  <h1 class="text-center pb-2">Wikipedia Viewer <i class="fa fa-1x fa-search" style="color: black"></i> </h1>
-                  <h5 class="text-center pb-4">Just type your search in and press enter. <i>Or click the the button</i></h5>
-                  <div class="input-group">
-                              <span class="input-group-addon" ><i class="fa fa-search" id="searchBtn"></i></span>
-                              <input type="text" class="form-control" id="Wikipedia" placeholder="What do you want to search" aria-label="Username" aria-describedby="basic-addon1" minlength="1" autofocus>
+        <div class="col-12 justify-content-center">
+          <h1 class="text-center pb-2">Wikipedia Viewer <i class="fa fa-1x fa-search" style="color: black"></i> </h1>
+          <h5 class="text-center pb-4">Just type your search in and press enter. <i>Or click the the button</i></h5>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search" id="searchBtn"></i></span>
+            <input type="text" class="form-control" id="Wikipedia" placeholder="What do you want to search" aria-label="Username"
+              aria-describedby="basic-addon1" minlength="1" autofocus>
 
-                  </div>
-                  <br>
-                  <a class="btn btn-secondary mb-4" href="https://en.wikipedia.org/wiki/Special:Random" role="button">Feeling lucky??</a>
-                  <i class="fa fa-3x fa-github-square" id="gitHub"></i>
-                  <i class="fa fa-3x fa-twitter" id="twitter"aria-hidden="true"></i>
-                  
-                  <br>
+          </div>
+          <div id="social-icons">
+          <a class="btn btn-success mb-4" href="https://en.wikipedia.org/wiki/Special:Random" role="button">Feeling
+            lucky??</a>
+          
+            <i class="fa fa-3x fa-github-square" id="gitHub"></i>
+            <i class="fa fa-3x fa-twitter" id="twitter" aria-hidden="true"></i>
+          </div>
+          <div id="display-result" class="justify-content-center">
 
-                  <div id="display-result" class="justify-content-center">
-
-                  </div>
-            </div>
-
-
-
-
-
-
-
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
 
 
-</div> <!-- end of container-fluid -->
-<script
-src="https://code.jquery.com/jquery-3.2.1.min.js"
-integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-crossorigin="anonymous"></script>
+  </div> <!-- end of container-fluid -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
-<script src="index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
